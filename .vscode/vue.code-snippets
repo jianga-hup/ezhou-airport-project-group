@@ -1,0 +1,20 @@
+{
+  "Vue3 SFC 代码结构一键生成": {
+    "prefix": "Vue3 SFC",
+    "body": [
+      "<!--",
+      "* @description $1",
+      "* @fileName $TM_FILENAME",
+      "* @author ",
+      "* @date $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+      "!-->",
+      "<template>",
+      "\t<div class=\"app-container\">...</div>",
+      "</template>\n",
+      "<script lang=\"ts\" setup></script>\n",
+      "<style scoped lang=\"scss\"></style>",
+      "$1"
+    ],
+    "description": "Vue3 SFC"
+  }
+}

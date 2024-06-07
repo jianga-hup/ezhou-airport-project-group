@@ -1,0 +1,206 @@
+// 全局 CSS 变量
+@import './variables.css';
+// mixin
+@import './mixins.scss';
+// 悬浮框
+@import './popper.scss';
+// 弹框
+@import './popframe.scss';
+// 表格
+@import './vui-table.scss';
+@font-face {
+  font-family: 'DINAlternate-Bold';
+  src: url('../assets/font/DINAlternate-Bold.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'DIN-Bold';
+  src: url('../assets/font/DIN-Bold.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'manrope3';
+  src: url('../assets/font/manrope3.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'NumberRegular';
+  src: url('../assets/font/DigitalRegular.ttf');
+}
+
+//
+@font-face {
+  font-family: 'PingFangSC-Medium';
+  src: url('../assets/font/PingFangSC-Medium.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../assets/font/PingFangSC-Regular.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Semibold';
+  src: url('../assets/font/PingFangSC-Semibold.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PingFangSC-Regular';
+  src: url('../assets/font/PingFangSC-Light.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'YouSheBiaoTiHei';
+  src: url('../assets/font/YouSheBiaoTiHei.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'PangMenZhengDao';
+  src: url('../assets/font/PangMenZhengDao.ttf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Quartz-Regular';
+  src: url('../assets/font/Quartz Regular.ttf');
+  font-weight: normal;
+}
+// 业务页面几乎都应该在根元素上挂载 class="app-container"，以保持页面美观
+.app-container {
+  padding: 20px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-color: var(--v3-body-bg-color);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial,
+    sans-serif;
+  @extend %scrollbar;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.sccolw {
+  &::-webkit-scrollbar {
+    display: none; /* Chrome Safari */
+  }
+}
+
+.unit-title {
+  padding-left: 31px;
+  position: relative;
+  font-size: 20px;
+  font-family: PangMenZhengDao, PangMenZhengDao;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 23px;
+  text-shadow: 0px 0px 6px #4398c7;
+  letter-spacing: 3px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 1px;
+    width: 25px;
+    height: 20px;
+    background: url('@/assets/images/common/unit-title.png');
+    background-size: 100% 100%;
+  }
+}
+
+.unit-title2 {
+  padding-left: 30px;
+  position: relative;
+  font-family:
+    PingFang SC,
+    PingFang SC;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 21px;
+  &::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -5px;
+    width: 32px;
+    height: 31px;
+    background: url('@/assets/images/common/title-inco2.png');
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slide-in-left 2.5s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slide-in-right 2.5s ease-out forwards;
+}
+
+.slide-in-bottom {
+  animation: slide-in-bottom 2.5s ease-out forwards;
+}

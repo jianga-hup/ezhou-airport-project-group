@@ -1,0 +1,149 @@
+{
+  "color": [
+    "#009EEB",
+    "#19D08E",
+    "#F5AB24",
+    "#EE6351",
+    "#4179B3",
+    "#73DEB3",
+    "#60666F",
+    "#F7C11F",
+    "#E96A5A",
+    "#75CBEE",
+    "#9966BD",
+    "#FF9D4E",
+    "#299999",
+    "#FF9FC7"
+  ],
+  "backgroundColor": "transparent",
+  "textStyle": {},
+  "legend": {
+    "textStyle": {
+      "fontSize": 14
+    }
+  },
+  "title": {
+    "textStyle": {
+      "color": "#666666"
+    },
+    "subtextStyle": {
+      "color": "#999999"
+    }
+  },
+  "categoryAxis": {
+    "nameTextStyle": {
+      "color": "#333"
+    },
+    "axisLine": {
+      "show": true,
+      "lineStyle": {
+        "color": "#EEF2F7"
+      }
+    },
+    "axisTick": {
+      "show": false,
+      "lineStyle": {
+        "color": "#333"
+      }
+    },
+    "axisLabel": {
+      "show": true,
+      "textStyle": {
+        "color": "#A0A0A0"
+      }
+    },
+    "splitLine": {
+      "show": false,
+      "lineStyle": {
+        "color": ["#cccccc"]
+      }
+    },
+    "splitArea": {
+      "show": false,
+      "areaStyle": {
+        "color": ["rgba(250,250,250,0.3)", "rgba(200,200,200,0.3)"]
+      }
+    }
+  },
+  "valueAxis": {
+    "nameTextStyle": {
+      "color": "#A0A0A0"
+    },
+    "axisLine": {
+      "show": true,
+      "lineStyle": {
+        "color": "#EEF2F7"
+      }
+    },
+    "axisTick": {
+      "show": false,
+      "lineStyle": {
+        "color": "#333"
+      }
+    },
+    "axisLabel": {
+      "show": true,
+      "textStyle": {
+        "color": "#A0A0A0"
+      }
+    },
+    "splitLine": {
+      "show": true,
+      "lineStyle": {
+        "color": ["#EEF2F7"]
+      }
+    },
+    "splitArea": {
+      "show": false,
+      "areaStyle": {
+        "color": ["rgba(250,250,250,0.3)", "rgba(200,200,200,0.3)"]
+      }
+    }
+  },
+  "logAxis": {
+    "nameTextStyle": {
+      "color": "#333"
+    },
+    "axisLine": {
+      "show": true,
+      "lineStyle": {
+        "color": "#cccccc"
+      }
+    },
+    "axisTick": {
+      "show": false,
+      "lineStyle": {
+        "color": "#333333"
+      }
+    },
+    "axisLabel": {
+      "show": true,
+      "textStyle": {
+        "color": "#333"
+      }
+    },
+    "splitLine": {
+      "show": true,
+      "lineStyle": {
+        "color": ["#eeeeee"]
+      }
+    },
+    "splitArea": {
+      "show": false,
+      "areaStyle": {
+        "color": ["rgba(250,250,250,0.3)", "rgba(200,200,200,0.3)"]
+      }
+    }
+  },
+  "line": {
+    "itemStyle": {
+      "borderColor": "#fff",
+      "borderWidth": "1.5"
+    },
+    "lineStyle": {
+      "width": 2
+    },
+    "symbolSize": "10",
+    "symbol": "path://M512 42.666667c259.2 0 469.333333 210.133333 469.333333 469.333333s-210.133333 469.333333-469.333333 469.333333S42.666667 771.2 42.666667 512 252.8 42.666667 512 42.666667z m0 55.466666c-230.9248 0-418.133333 186.2528-418.133333 416S281.0752 930.133333 512 930.133333s418.133333-186.2528 418.133333-416S742.9248 98.133333 512 98.133333z m0 106.666667c169.659733 0 307.2 137.540267 307.2 307.2s-137.540267 307.2-307.2 307.2-307.2-137.540267-307.2-307.2 137.540267-307.2 307.2-307.2z"
+  }
+}

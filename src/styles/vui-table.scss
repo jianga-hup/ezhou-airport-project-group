@@ -1,0 +1,42 @@
+.vui-dark-table {
+  background: transparent;
+  --el-table-border-color: #26518a;
+  --el-text-color-regular: #4cafff;
+  .el-loading-mask {
+    background-color: #06182f;
+  }
+  tr {
+    background: transparent;
+  }
+  thead.is-group th.el-table__cell {
+    // background: transparent;
+    background: #173a5c;
+  }
+  .el-table__body tr.hover-row > td.el-table__cell {
+    background: #06182f;
+  }
+  .el-table__body tr > td.el-table__cell {
+    background: #06182f;
+  }
+  .cell {
+    font-family:
+      PingFangSC,
+      PingFang SC;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c9e7ff;
+  }
+  ::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(47, 166, 235, 0.3);
+  }
+  .el-table__expand-icon {
+    .el-icon {
+      font-size: 14px;
+    }
+  }
+}
